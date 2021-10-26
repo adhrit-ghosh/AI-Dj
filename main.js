@@ -3,7 +3,8 @@ leftwrist_x=0;
 leftwrist_y=0;
 rightwrist_x=0;
 rightwrist_y=0;
-
+score_leftwrist=0;
+score_rightwrist=0;
 
 function preload(){
 song=loadSound("music.mp3");
@@ -50,10 +51,11 @@ if(score_leftwrist>0.2){
     //volume= volume_data.toFixed(1);
     console.log(volume);
     song.setVolume(volume);
-    document.getElementById("volume").innerHTML="volume"+volume;
+    document.getElementById("volume").innerHTML="volume="+volume;
 }
 
 if(score_rightwrist>0.2){
+    circle(rightwrist_x, rightwrist_y, 20);
     if(rightwrist_y>=0 && rightwrist_y<=100){
         song.rate(0.5);
         document.getElementById("speed").innerHTML="speed = 0.5x";
