@@ -1,0 +1,41 @@
+body{
+    background:url("background.jpg");
+background-size:cover;
+
+}
+.header{
+    font-size:20px;
+    color:blue;
+width:100%;
+
+margin:0px;
+}
+span{
+    color:darkblue;
+    font-size:16px;
+}
+.div_speed{
+    float:left;
+}
+.speedimg{
+    width:200px;
+    border-radius: 20px;
+
+}
+#speed{
+font-size:30px;
+}
+.div_volume{
+    float:right;
+}
+#volume{
+    font-size:30px;
+}
+#play,#stop{
+    font-size:25px;
+}
+canvas{
+    border:5px solid black;
+    border-radius: 10px;
+    margin-top: 100px;
+}
